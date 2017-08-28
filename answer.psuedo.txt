@@ -1,0 +1,15 @@
+<?php
+
+
+
+function UniqueRandomNumber($min, $max,$name) {
+    $numbers = range($min, $max);
+    shuffle($numbers);
+$array_num= array_slice($numbers, 0);
+for ($i=0;$i<1;$i++){
+$f=$array_num[$i];
+$Temp=('"'.$f." ".$name.'"');
+print_r($Temp);
+}
+}
+UniqueRandomNumber(6,15,'Rahul');
